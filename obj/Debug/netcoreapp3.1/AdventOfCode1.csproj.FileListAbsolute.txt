@@ -1,0 +1,14 @@
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.exe
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.deps.json
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.runtimeconfig.json
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.runtimeconfig.dev.json
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.dll
+D:\source\adventofcode1\bin\Debug\netcoreapp3.1\AdventOfCode1.pdb
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.csproj.AssemblyReference.cache
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.AssemblyInfoInputs.cache
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.AssemblyInfo.cs
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.csproj.CoreCompileInputs.cache
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.dll
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.pdb
+D:\source\adventofcode1\obj\Debug\netcoreapp3.1\AdventOfCode1.genruntimeconfig.cache
