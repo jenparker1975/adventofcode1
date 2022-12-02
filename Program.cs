@@ -9,18 +9,153 @@ namespace AdventOfCode1
     {
         static void Main(string[] args)
         {
+            Day2B();
+        }
+
+        static void Day2()
+        {
+            var lines = File.ReadAllLines(@"D:\source\adventofcode1\rockpaperscissors.txt");            
+            int totalScore = 0;            
+            foreach (var line in lines)
+            {
+                var chars = line.ToCharArray();
+               
+                switch(chars[0])
+                {
+                    //opponent picks Rock
+                    case 'A':
+                        if (chars[2] == 'X') //rock
+                        {
+                            totalScore += 1 + 3;
+                        }
+                        else if (chars[2] == 'Y') //paper
+                        {
+                            totalScore += 2 + 6;
+                        }
+                        else //scissors
+                        {
+                            totalScore += 3 + 0; 
+                        }
+
+                        break;
+
+                    //opponent picks Paper
+                    case 'B':
+                        if (chars[2] == 'X') //rock
+                        {
+                            totalScore += 1 + 0;
+                        }
+                        else if (chars[2] == 'Y') //paper
+                        {
+                            totalScore += 2 + 3;
+                        }
+                        else //scissors
+                        {
+                            totalScore += 3 + 6; 
+                        }
+                        break;
+;
+
+                    //opponent picks scissors
+                    case 'C':
+                        if (chars[2] == 'X') //rock
+                        {
+                            totalScore += 1 + 6;
+                        }
+                        else if (chars[2] == 'Y') //paper
+                        {
+                            totalScore += 2 + 0;
+                        }
+                        else //scissors
+                        {
+                            totalScore += 3 + 3;
+                        }
+
+                        break;
+                }                
+            }
+            Console.WriteLine(totalScore);
+        }
+
+        static void Day2B()
+        {
+            var lines = File.ReadAllLines(@"D:\source\adventofcode1\rockpaperscissors.txt");            
+            int totalScore = 0;
+            foreach (var line in lines)
+            {
+                var chars = line.ToCharArray();
+
+                switch (chars[0])
+                {
+                    //opponent picks Rock
+                    case 'A':
+                        if (chars[2] == 'X') //I need to lose, so I pick scissors
+                        {
+                            totalScore += 3 + 0;
+                        }
+                        else if (chars[2] == 'Y') //I need a drawer, so I pick rock
+                        {
+                            totalScore += 1 + 3;
+                        }
+                        else //I need to win so I pick paper
+                        {
+                            totalScore += 2 + 6;
+                        }
+
+                        break;
+
+                    //opponent picks Paper
+                    case 'B':
+                        if (chars[2] == 'X') //I need to lose, so I pick rock
+                        {
+                            totalScore += 1 + 0;
+                        }
+                        else if (chars[2] == 'Y') //I need a drawer so I pick paper
+                        {
+                            totalScore += 2 + 3;
+                        }
+                        else //I need to win so I pick scissors
+                        {
+                            totalScore += 3 + 6;
+                        }
+                        break;
+                        ;
+
+                    //opponent picks scissors
+                    case 'C':
+                        if (chars[2] == 'X') //I need to lose, so I pick paper
+                        {
+                            totalScore += 2 + 0;
+                        }
+                        else if (chars[2] == 'Y') //I need a drawer so I pick scissors
+                        {
+                            totalScore += 3 + 3;
+                        }
+                        else //I need to win so I pick rock
+                        {
+                            totalScore += 1 + 6;
+                        }
+
+                        break;
+                }
+            }
+            Console.WriteLine(totalScore);
+        }
+
+        static void Day1()
+        {
             var elvesAndCalories = new Dictionary<int, int>();
-            var elf = 1;            
-            
+            var elf = 1;
+
             var lines = File.ReadAllLines(@"D:\source\adventofcode1\elves.txt");
             elvesAndCalories.Add(elf, 0);
 
             foreach (var line in lines)
-            {                
+            {
                 if (string.IsNullOrWhiteSpace(line))
-                {   
+                {
                     elf++;
-                    elvesAndCalories.Add(elf, 0);                    
+                    elvesAndCalories.Add(elf, 0);
                     continue;
                 }
 
