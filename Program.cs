@@ -9,8 +9,7 @@ namespace AdventOfCode1
     {
         static void Main(string[] args)
         {
-            DayThree.CalculateScore1();
-            DayThree.CalculateScore2();
+            DayFour.CalculateScore1();
 
         }
     }
