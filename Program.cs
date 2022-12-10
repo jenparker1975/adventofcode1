@@ -9,9 +9,7 @@ namespace AdventOfCode1
     {
         static void Main(string[] args)
         {
-            var daySix = new DaySix();
-            daySix.GetMarker();
-
+           DaySeven.CalculateSizes();
         }
     }
 }
